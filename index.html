@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Espaldita" />
+    <meta name="theme-color" content="#e6f0f7" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" href="icon-192.png" />
+    <title>Espaldita</title>
+    <script type="module" crossorigin src="./assets/index-DpmtI7w-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-ANPwCXzZ.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <main id="home" class="home">
+      <section class="today" id="today" aria-label="Movimiento de hoy">
+        <button class="figure" id="today-figure" type="button">
+          <svg aria-hidden="true"></svg>
+        </button>
+        <h1 class="nick" id="today-nick"></h1>
+        <p class="formal" id="today-formal"></p>
+        <p class="meta" id="today-meta"></p>
+      </section>
+      <section class="practice" aria-label="Práctica">
+        <svg class="heat" id="heat" role="img" aria-label="Tus últimas ocho semanas de práctica"></svg>
+        <p class="meta" id="comeback" hidden>Cuánto tiempo. La patata te echaba de menos.</p>
+        <p class="meta" id="practice-line"></p>
+      </section>
+      <footer class="foot">
+        <button class="quiet" id="other" type="button">Otro</button>
+        <button class="quiet" id="open-settings" type="button">Ajustes</button>
+      </footer>
+    </main>
+
+    <section class="overlay guide" id="guide" aria-label="Movimiento guiado">
+      <button class="stage" id="guide-stage" type="button" aria-label="Pausar">
+        <svg class="ring" viewBox="0 0 300 300" aria-hidden="true">
+          <circle class="ring-track" cx="150" cy="150" r="140" />
+          <path class="ring-arc" id="guide-arc" />
+        </svg>
+        <svg class="figure-live" id="guide-figure" aria-hidden="true"></svg>
+      </button>
+      <p class="breath" id="guide-breath"></p>
+      <p class="cue" id="guide-cue" aria-live="polite"></p>
+      <p class="side" id="guide-side" hidden></p>
+      <p class="safe">Sin dolor. Si molesta, para.</p>
+      <button class="quiet end" id="guide-end" type="button">Terminar</button>
+    </section>
+
+    <section class="overlay still" id="still" aria-label="Hecho">
+      <svg id="calendar" role="img" aria-label="Tus últimas ocho semanas de práctica"></svg>
+      <p class="headline" id="still-headline"></p>
+      <p class="sub" id="still-run"></p>
+      <button class="quiet" id="still-back" type="button">Volver</button>
+    </section>
+
+    <section class="sheet" id="settings" aria-label="Ajustes"></section>
+
+    <section class="overlay notice" id="notice" aria-label="Antes de empezar"></section>
+
+  </body>
+</html>
